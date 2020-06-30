@@ -12,4 +12,10 @@ The RMI ( Remote Method Invocation ) is an API  that provides a mechanism to cre
 
 
 ## 	ARCHITECTURE 
+There are 3 campuses namely Dorval-Campus ( DVL), Kirkland-Campus (KKL) and Westmount-Campus (WST). Each Campus is assigned a Server. The Clients i.e. the Students and the Admins have varying accessibility. The Admins can either Create a room or Delete a room whereas the Students can Book a room, get available Time-Slots and  Cancel the booking.
+
+The Student and the Admin are represented by respective classes. These classes can call remote methods present on the server through  JAVA RMI. Each student is associated with a particular campus which is known by the User Id. To get available Time-Slots present on other servers, the server associated with the student has to communicate with them using UDP Connection.
+
 ![](Architecture.jpg)
+
+## 
